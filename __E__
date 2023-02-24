@@ -212,11 +212,5 @@ Tab:AddButton({
   	end    
 })
 
-local Tab = Window:MakeTab({
-	Name = "COMING SOON",
-	Icon = "rbxassetid://4483345998",
-	PremiumOnly = false
-})
-
 OrionLib:Init()
 
