@@ -3,7 +3,7 @@ local Window = OrionLib:MakeWindow({Name = "OPZTVBOOM's Private GUI", HidePremiu
 
 local tablewhitelistusernames = {
     "OPZTVBOOM",
-    "",
+    "JohnMark201745",
     "",
     "" 
 }
@@ -22,6 +22,12 @@ end
 
 local Tab = Window:MakeTab({
 	Name = "Main",
+	Icon = "rbxassetid://4483345998",
+	PremiumOnly = false
+})
+
+local Tab = Window:MakeTab({
+	Name = "COMING SOON",
 	Icon = "rbxassetid://4483345998",
 	PremiumOnly = false
 })
