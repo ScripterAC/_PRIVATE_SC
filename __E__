@@ -1,0 +1,215 @@
+local OrionLib = loadstring(game:HttpGet(('https://raw.githubusercontent.com/shlexware/Orion/main/source')))()
+local Window = OrionLib:MakeWindow({Name = "OPZTVBOOM's Private GUI", HidePremium = false, IntroText = "OPZTVBOOM's Gui", SaveConfig = true, ConfigFolder = "OrionTest"})
+
+local tablewhitelistusernames = {
+    "OPZTVBOOM",
+    "",
+    "",
+    "" 
+}
+local tablewhitelistuserids = {
+    IDHERE,
+    IDHERE,
+    IDHERE,
+    IDHERE 
+}
+local whitelist = tablewhitelistusernames
+local whitelistids = tablewhitelistuserids
+local plr = game:GetService("Players").LocalPlayer
+if not table.find(whitelist, plr.Name) and not table.find(whitelistids, plr.UserId) then
+    plr:Kick("You are not whitelisted! Ask the owner (OPZTVBOOM) to be whitelisted.")
+end
+
+local Tab = Window:MakeTab({
+	Name = "Main",
+	Icon = "rbxassetid://4483345998",
+	PremiumOnly = false
+})
+
+local Section = Tab:AddSection({
+	Name = "Main"
+})
+
+Tab:AddColorpicker({
+	Name = "Colour Picker (Will be fixed later)",
+	Default = Color3.fromRGB(255, 0, 0),
+	Callback = function(Value)
+		print(Value)
+	end	  
+})
+
+OrionLib:MakeNotification({
+	Name = "Thanks for using my gui!",
+	Content = "Thank you for using OPZTVBOOM's gui!",
+	Image = "rbxassetid://4483345998",
+	Time = 5
+})
+
+Tab:AddButton({
+	Name = "Fates Admin",
+	Callback = function()
+      		loadstring(game:HttpGet("https://raw.githubusercontent.com/fatesc/fates-admin/main/main.lua"))();
+  	end    
+})
+
+Tab:AddButton({
+	Name = "Ghost Hub",
+	Callback = function()
+      		loadstring(game:HttpGet('https://raw.githubusercontent.com/GhostPlayer352/Test4/main/GhostHub'))()
+  	end    
+})
+
+Tab:AddButton({
+	Name = "Lucky Block Battlegrounds (Enter console to see cmds)",
+	Callback = function()
+      		loadstring(game:HttpGet('https://pastebin.com/raw/nUKfLDFV'))()
+  	end    
+})
+
+Tab:AddButton({
+	Name = "Infinite Yield",
+	Callback = function()
+      		loadstring(game:HttpGet('https://raw.githubusercontent.com/EdgeIY/infiniteyield/master/source'))()
+  	end    
+})
+
+Tab:AddButton({
+	Name = "Prison Life Septex",
+	Callback = function()
+      		loadstring(game:HttpGet(('https://raw.githubusercontent.com/XTheMasterX/Scripts/Main/PrisonLife'),true))()
+  	end    
+})
+
+Tab:AddButton({
+	Name = "Prison Life Commands",
+	Callback = function()
+      		loadstring(game:HttpGet(('https://pastebin.com/raw/3XMbE0dB'),true))()
+  	end    
+})
+
+Tab:AddButton({
+	Name = "Chat Bypass 1.0",
+	Callback = function()
+      		loadstring(game:HttpGet("https://raw.githubusercontent.com/x114/RobloxScripts/main/FullChatBypass"))()
+  	end    
+})
+
+local Tab = Window:MakeTab({
+	Name = "OP Scripts",
+	Icon = "rbxassetid://4483345998",
+	PremiumOnly = false
+})
+
+Tab:AddButton({
+	Name = "MM2 Script",
+	Callback = function()
+      		loadstring(game:HttpGet("https://raw.githubusercontent.com/Doggo-cryto/EclipseMM2/master/Script", true))()
+  	end    
+})
+
+Tab:AddButton({
+	Name = "Give Pet (Speed Run Simulator)",
+	Callback = function()
+      		loadstring(game:HttpGet('https://pastebin.com/EvBecQqi'))()
+  	end    
+})
+
+Tab:AddButton({
+	Name = "Auto Orb (Speed Run Simulator)",
+	Callback = function()
+      		loadstring(game:HttpGet('https://pastebin.com/UAc02QKA'))()
+  	end    
+})
+
+OrionLib:Init()
+
+Tab:AddButton({
+	Name = "Doors Vynxius",
+	Callback = function()
+      		loadstring(game:HttpGet("https://raw.githubusercontent.com/RegularVynixu/Vynixius/main/Doors/Script.lua"))()
+  	end    
+})
+
+Tab:AddButton({
+	Name = "Apeirophobia",
+	Callback = function()
+      		loadstring(game:HttpGet('https://pastebin.com/HNkjAxDZ'))()
+  	end    
+})
+
+Tab:AddButton({
+	Name = "Cookburgers with 100 players",
+	Callback = function()
+      		loadstring(game:HttpGet("https://pastebin.com/raw/LMWCkgnm"))()
+  	end    
+})
+
+Tab:AddButton({
+	Name = "Normal Cook Burgers",
+	Callback = function()
+      		loadstring(game:HttpGet('https://pastebin.com/XN99eybZ'))()
+  	end    
+})
+
+Tab:AddButton({
+	Name = "Race Clicker",
+	Callback = function()
+      		loadstring(game:HttpGet(('https://raw.githubusercontent.com/Saaakai/Random-Roblox-Script/main/Race%20Clicker')))()
+  	end    
+})
+
+Tab:AddButton({
+	Name = "Infamy",
+	Callback = function()
+      		loadstring(game:HttpGet('https://raw.githubusercontent.com/502Development/502Lua/main/games/infamy.lua'))()
+  	end    
+})
+
+local Tab = Window:MakeTab({
+	Name = "Fun",
+	Icon = "rbxassetid://4483345998",
+	PremiumOnly = false
+})
+
+Tab:AddButton({
+	Name = "Car",
+	Callback = function()
+      		loadstring(game:HttpGet('https://pastebin.com/raw/CdfLb42w'))()
+  	end    
+})
+
+Tab:AddButton({
+	Name = "Tall Man FE",
+	Callback = function()
+      		loadstring(game:HttpGet('https://pastebin.com/CegG497n'))()
+  	end    
+})
+
+Tab:AddButton({
+	Name = "FE Big Head",
+	Callback = function()
+      		loadstring(game:HttpGet("https://raw.githubusercontent.com/sysGhost-aka-BiKode/Scripts2022/main/BigHeadV3_Unpatched", true))()
+  	end    
+})
+
+Tab:AddButton({
+	Name = "Brookhaven",
+	Callback = function()
+      		loadstring(game:HttpGet("https://pastebin.com/zgN1PxrE"))()
+  	end    
+})
+
+local Tab = Window:MakeTab({
+	Name = "FE hat scripts",
+	Icon = "rbxassetid://4483345998",
+	PremiumOnly = false
+})
+
+Tab:AddButton({
+	Name = "Spider",
+	Callback = function()
+      		loadstring(game:HttpGet(('https://raw.githubusercontent.com/0Ben1/fe/main/Sipder'),true))()
+  	end    
+})
+
+OrionLib:Init()
