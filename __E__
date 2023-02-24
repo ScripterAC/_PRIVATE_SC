@@ -26,12 +26,6 @@ local Tab = Window:MakeTab({
 	PremiumOnly = false
 })
 
-local Tab = Window:MakeTab({
-	Name = "COMING SOON",
-	Icon = "rbxassetid://4483345998",
-	PremiumOnly = false
-})
-
 local Section = Tab:AddSection({
 	Name = "Main"
 })
@@ -216,6 +210,12 @@ Tab:AddButton({
 	Callback = function()
       		loadstring(game:HttpGet(('https://raw.githubusercontent.com/0Ben1/fe/main/Sipder'),true))()
   	end    
+})
+
+local Tab = Window:MakeTab({
+	Name = "COMING SOON",
+	Icon = "rbxassetid://4483345998",
+	PremiumOnly = false
 })
 
 OrionLib:Init()
