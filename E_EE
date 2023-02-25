@@ -206,6 +206,14 @@ local Tab = Window:MakeTab({
 })
 
 Tab:AddButton({
+	Name = "FE Icehub admin",
+	Callback = function()
+      		loadstring(game:HttpGet('https://raw.githubusercontent.com/IceMael7/IceHubAdmin/main/IceHub'))()
+
+  	end    
+})
+
+Tab:AddButton({
 	Name = "Spider",
 	Callback = function()
       		loadstring(game:HttpGet(('https://raw.githubusercontent.com/0Ben1/fe/main/Sipder'),true))()
