@@ -108,6 +108,20 @@ Tab:AddButton({
 })
 
 Tab:AddButton({
+	Name = "Bedwars VapeHub",
+	Callback = function()
+      		loadstring(game:HttpGet("https://raw.githubusercontent.com/7GrandDadPGN/VapeV4ForRoblox/main/NewMainScript.lua", true))()
+  	end    
+})
+
+Tab:AddButton({
+	Name = "Universal Script hub",
+	Callback = function()
+      		loadstring(game:HttpGet('https://raw.githubusercontent.com/Dvrknvss/UniversalFEScriptHub/main/Script'))()
+  	end    
+})
+
+Tab:AddButton({
 	Name = "Give Pet (Speed Run Simulator)",
 	Callback = function()
       		loadstring(game:HttpGet('https://pastebin.com/EvBecQqi'))()
