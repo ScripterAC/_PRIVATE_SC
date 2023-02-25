@@ -193,14 +193,14 @@ Tab:AddButton({
 })
 
 Tab:AddButton({
-	Name = "Brookhaven",
+	Name = "Brookhaven IceHub",
 	Callback = function()
       		loadstring(game:HttpGet("https://pastebin.com/zgN1PxrE"))()
   	end    
 })
 
 Tab:AddButton({
-	Name = "FE Icehub admin",
+	Name = "Brookhaven IceHub Admin",
 	Callback = function()
       		loadstring(game:HttpGet('https://raw.githubusercontent.com/IceMael7/IceHubAdmin/main/IceHub'))()
 
