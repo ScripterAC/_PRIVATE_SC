@@ -199,18 +199,18 @@ Tab:AddButton({
   	end    
 })
 
-local Tab = Window:MakeTab({
-	Name = "FE hat scripts",
-	Icon = "rbxassetid://4483345998",
-	PremiumOnly = false
-})
-
 Tab:AddButton({
 	Name = "FE Icehub admin",
 	Callback = function()
       		loadstring(game:HttpGet('https://raw.githubusercontent.com/IceMael7/IceHubAdmin/main/IceHub'))()
 
   	end    
+})
+
+local Tab = Window:MakeTab({
+	Name = "FE hat scripts",
+	Icon = "rbxassetid://4483345998",
+	PremiumOnly = false
 })
 
 Tab:AddButton({
