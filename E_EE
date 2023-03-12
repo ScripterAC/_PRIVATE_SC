@@ -4,8 +4,8 @@ local Window = OrionLib:MakeWindow({Name = "minecraftlooveer's Private GUI v1.1.
 local tablewhitelistusernames = {
     "minecraftlooveer",
     "JohnMark201745",
-    "",
-    "" 
+    "Hi_isyougood12",
+    "ENDISHERE656" 
 }
 local tablewhitelistuserids = {
     IDHERE,
