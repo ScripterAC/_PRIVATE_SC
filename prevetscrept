@@ -1,0 +1,92 @@
+local Rayfield = loadstring(game:HttpGet('https://raw.githubusercontent.com/shlexware/Rayfield/main/source'))()
+
+local Window = Rayfield:CreateWindow({
+    Name = "FE Universal Hub (Fanmade)",
+    LoadingTitle = "FE Universal Hub (Fanmade)",
+    LoadingSubtitle = "by minecraftlooveer on roblox (@Erazerz#6936 on discord)",
+    ConfigurationSaving = {
+       Enabled = true,
+       FolderName = nil, -- Create a custom folder for your hub/game
+       FileName = "Big Hub"
+    },
+    Discord = {
+       Enabled = false,
+       Invite = "5jYgwRua", -- The Discord invite code, do not include discord.gg/. E.g. discord.gg/ABCD would be ABCD.
+       RememberJoins = true -- Set this to false to make them join the discord every time they load it up
+    },
+    KeySystem = true, -- Set this to true to use our key system
+    KeySettings = {
+       Title = "Key Stage",
+       Subtitle = "Key Stage",
+       Note = "Join the discord (discord.gg/5jYgwRua)",
+       FileName = "Big Hub2",
+       SaveKey = true,
+       GrabKeyFromSite = false, -- If this is true, set Key below to the RAW site you would like Rayfield to get the key from
+       Key = "minecraftlooveer..a..wtf"
+    }
+ })
+ 
+ local Tab = Window:CreateTab("Admin Scripts", 4483362458) -- Title, Image
+ 
+ local Section = Tab:CreateSection("Admin Scripts")
+
+ local Button = Tab:CreateButton({
+   Name = "Infinite Yield",
+   Callback = function()
+   loadstring(game:HttpGet('https://raw.githubusercontent.com/EdgeIY/infiniteyield/master/source'))()
+   end,
+})
+
+local Button = Tab:CreateButton({
+   Name = "Fates Admin",
+   Callback = function()
+   loadstring(game:HttpGet("https://raw.githubusercontent.com/fatesc/fates-admin/main/main.lua"))();
+   end,
+})
+
+local Button = Tab:CreateButton({
+   Name = "Icehub Brookhaven Admin",
+   Callback = function()
+   loadstring(game:HttpGet('https://raw.githubusercontent.com/IceMael7/IceHubAdmin/main/IceHub'))()
+   end,
+})
+
+local Tab = Window:CreateTab("OP Scripts", 4483362458)
+
+local Button = Tab:CreateButton({
+   Name = "Bedwars Vapehub",
+   Callback = function()
+   loadstring(game:HttpGet("https://raw.githubusercontent.com/7GrandDadPGN/VapeV4ForRoblox/main/NewMainScript.lua", true))()
+   end,
+})
+
+local Button = Tab:CreateButton({
+   Name = "Cook burgers with 100 players",
+   Callback = function()
+   loadstring(game:HttpGet("https://pastebin.com/raw/LMWCkgnm"))()
+   end,
+})
+
+local Button = Tab:CreateButton({
+   Name = "Regular cook burgers",
+   Callback = function()
+   loadstring(game:HttpGet('https://pastebin.com/XN99eybZ'))()
+   end,
+})
+
+local Button = Tab:CreateButton({
+   Name = "Regular cook burgers",
+   Callback = function()  
+   loadstring(game:HttpGet(('https://raw.githubusercontent.com/Saaakai/Random-Roblox-Script/main/Race%20Clicker')))()
+   end,
+})
+
+local Tab = Window:CreateTab("COMING SOON", 4483362458)
+
+local Tab = Window:CreateTab("COMING SOON", 4483362458)
+
+local Tab = Window:CreateTab("COMING SOON", 4483362458)
+
+local Tab = Window:CreateTab("Info about the script hub", 4483362458)
+
+local Paragraph = Tab:CreateParagraph({Title = "Current Info About The Script", Content = "Creator roblox user and discord: minecraftlooveer on roblox and Erazerz#6936 on discord"})
