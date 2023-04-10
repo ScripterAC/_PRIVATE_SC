@@ -1,5 +1,5 @@
 local OrionLib = loadstring(game:HttpGet(('https://raw.githubusercontent.com/shlexware/Orion/main/source')))()
-local Window = OrionLib:MakeWindow({Name = "minecraftlooveer's Private GUI v1.1.0", HidePremium = false, IntroText = "OPZTVBOOM's (minecraftlooveer is my alt friend it) Gui", SaveConfig = true, ConfigFolder = "OrionTest"})
+local Window = OrionLib:MakeWindow({Name = "minecraftlooveer's Private GUI v1.1.0", HidePremium = false, IntroText = "fucking ugly ass gui", SaveConfig = true, ConfigFolder = "OrionTest"})
 
 local tablewhitelistusernames = {
     "minecraftlooveer",
@@ -17,7 +17,7 @@ local whitelist = tablewhitelistusernames
 local whitelistids = tablewhitelistuserids
 local plr = game:GetService("Players").LocalPlayer
 if not table.find(whitelist, plr.Name) and not table.find(whitelistids, plr.UserId) then
-    plr:Kick("You are not whitelisted! Ask the owner (minecraftlooveer) to be whitelisted.")
+    plr:Kick("goofy ass bitch dont try me")
 end
 
 local Tab = Window:MakeTab({
